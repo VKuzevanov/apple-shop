@@ -1,0 +1,140 @@
+@import "mainvars";
+.nav {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: -20px;
+    margin-bottom:1em;
+}
+
+.nav__menu {
+    @extend .format-ul;
+    width: 100%;
+    font-size: 0;
+    /* убираем горизонтальные отступы */
+    
+    line-height: 0;
+    /* ...и вертикальные в некоторых браузерах */
+    
+    letter-spacing: -1px;
+    /* переубеждаем webkit'ы */
+      margin-left: 14px;
+
+}
+
+.nav__menu-item {
+	position: relative;
+	display: block;
+    line-height: normal;
+    letter-spacing: normal;
+    display: -moz-inline-stack!important;
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+}
+.nav__menu-item:last-child{
+    &:hover {
+        color: $d-bl;
+        background: darken($d-gr, 3%);
+        @include main-trans(.3s);
+
+        &:after{
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 14px solid darken($d-gr, 3%);
+        @include main-trans(.3s);
+   		}
+    }
+    
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        bottom: 0;
+        margin-right: -14px;
+    }
+    &:after {
+        z-index: 100;
+        right: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 14px solid $l-gr;
+    }
+    &:before {
+        z-index: 99;
+        right: -1px;
+        border-left: 14px solid $d-gr;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+    }
+
+}
+
+.nav__menu-link {
+    background: $l-gr;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: $d-bl;
+    padding: 11px 22px 11px 14px;
+    // box-sizing: border-box;
+    margin-left: 1px;
+    &:hover {
+        color: $d-bl;
+        background: darken($d-gr, 3%);
+        @include main-trans(.3s);
+        &:after {
+            border-top: 20px solid darken($d-gr, 3%);
+            border-bottom: 20px solid darken($d-gr, 3%);
+            border-left: 14px solid transparent;
+            @include main-trans(.3s);
+        }
+    }
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: -14px;
+    }
+    &:after {
+        z-index: 301;
+        left: 0;
+        border-top: 20px solid $l-gr;
+        border-bottom: 20px solid $l-gr;
+        border-left: 14px solid transparent;
+    }
+    &:before {
+        z-index: 300;
+        left: -1px;
+        border-left: 14px solid transparent;
+        border-top: 20px solid $d-gr;
+        border-bottom: 20px solid $d-gr;
+    }
+}
+
+.active {
+    @include main-trans(.3s);
+    color: #fff;
+    background-color: $bl;
+    &:after {
+        border-top: 20px solid $bl;
+        border-bottom: 20px solid $bl;
+        border-left: 14px solid transparent;
+        @include main-trans(.3s);
+    }
+}
+.sidebar__sub-menu-item, .sidebar__menu-item{
+    &:hover{
+        background-color: $d-gr;
+        @include main-trans(.3s);
+    }
+}

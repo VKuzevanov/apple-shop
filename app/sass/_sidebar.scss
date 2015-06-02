@@ -1,0 +1,49 @@
+@import 'mainvars';
+
+.sidebar__menu{
+	@extend .format-ul;
+}
+.sidebar__menu-item{
+	background-color: $l-gr;
+	border-top:solid 1px $d-gr;
+	&:first-child{
+			border-top:none;
+		
+	}
+}
+.sidebar__menu-link{
+	display:block;
+	text-decoration:none;
+	color:$d-bl;
+	
+	padding: 9px 5px 6px 20px;
+	max-width:230px;
+
+}
+.sidebar__sub-menu{
+	@extend .sidebar__menu;
+}
+.sidebar__sub-menu-item{
+	@extend .sidebar__menu-item;
+	background-image:url('../images/arrow-menu.png');
+	background-position: 20px 12px;
+	background-repeat: no-repeat;
+	&:first-child{
+		border-top: solid 1px $d-gr;
+	}
+}
+.sidebar__sub-menu-link{
+	@extend .sidebar__menu-link;
+	padding-left:33px;
+}
+
+.sidebar__menu-link-active{
+	@extend .active;
+		color:#fff;
+
+		&:hover{
+			color:$d-bl;
+			background:$d-gr;
+		}
+	
+}

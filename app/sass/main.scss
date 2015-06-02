@@ -1,1 +1,103 @@
-@import "mainvars";
+@import "header";
+@import "nav";
+@import "func-line";
+@import "sidebar";
+@import "products";
+@import "shop-info";
+@import "footer";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+  
+*{
+	border:0;
+	padding:0;
+	margin:0;
+	outline: none;	
+}
+body{
+	position: relative;
+	height:100%;
+	min-height:100%;
+	font-size:100%/1.5;
+	font-family: 'elektra_light_proregular';
+	word-wrap: break-word;
+	color:$d-bl;
+	@include main-trans(.3s);
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto 84px;
+	@include clearfix;
+}
+.sidebar{
+	width:230px;
+	float:left;
+}
+.main-content{
+	float:right;
+	width:740px;
+}
+.footer-wrap{
+	width:100%;
+	background: url(../images/pattern.jpg);
+	padding-top: 60px;
+}
+
+.up-btn{
+	position:fixed;
+	display:block;
+	width:76px;
+	padding: 5px 0;
+	color: #fff;
+	font-size: 16px;
+	text-decoration:none;
+	background-color:$bl;
+	right: 3%;
+  	bottom: 35%;
+  	text-align: center;
+  	font-family: 'elektra_light_probold';
+  	visibility: hidden;
+  	@include main-opacity(0);
+  	@include main-trans(.3s);
+
+  	&:before,
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right:30px;
+    }
+    &:after {
+        z-index: 100;
+        
+        top:0;
+        margin-top:-5px;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: 5px solid $bl;
+    }
+    &:before {
+        z-index: 99;
+        bottom:0;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: 5px solid #fff;
+    }
+}
+.up-btn__visible{
+	visibility: visible;
+ 	opacity: 1;
+ 	@include main-opacity(1);
+ 	@include main-trans(.3s);
+
+}

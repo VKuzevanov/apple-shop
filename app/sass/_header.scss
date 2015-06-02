@@ -1,0 +1,59 @@
+@import "mainvars";
+
+.header-wrap{
+	width:100%;
+	background-color:$d-gr;
+	padding-top:24px;
+}
+.header{
+	width:1000px;
+	min-height: 95px;
+	margin:0 auto;
+	position:relative;
+}
+.logo-link{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.logo-decription{
+	position:absolute;
+	display:block;
+	top:-9999px;
+}
+.contacts{
+	@extend .format-ul;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:right;
+
+}
+.contacts__item:first-child{
+	margin-bottom:.2em;	
+}
+.contacts__item-tel{
+	text-decoration: none;
+	color:$d-bl;
+	font-size: 1.5em;
+
+}
+.contacts__item-tel-code{
+	color:$bl;
+	font-family: 'elektra_light_probold'; 
+	font-weight: bold;
+	font-size: .7em;
+	vertical-align: top;
+}
+.contacts__item-mail{
+	color:$fio;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+
+	&:active{
+		opacity:.5;
+	}
+}

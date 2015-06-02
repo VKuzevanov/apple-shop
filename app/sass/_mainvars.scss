@@ -1,7 +1,8 @@
-$db: #61221d;
-$lb: #72342f;
-$el: #FFBF1F;
-$svet: #f6f2ed;
+$l-gr: #f7f7f7;
+$d-gr:#dce6f0;
+$bl: #00b9fe;
+$d-bl: #5c7b98;
+$fio:#613993;
 
 @mixin h-gradient($from, $to ,$start, $stop) {
   /* fallback/image non-cover color */
@@ -105,4 +106,9 @@ $svet: #f6f2ed;
     -moz-box-shadow: $top $left $blur $bold $color;
     box-shadow: $top $left $blur $bold $color;
   }
+}
+.format-ul{
+  padding:0;
+  margin:0;
+  list-style:none;
 }

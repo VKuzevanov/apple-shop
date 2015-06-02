@@ -1,0 +1,99 @@
+@import "mainvars";
+
+.footer{
+	width: 1000px;
+	margin:0 auto;
+	position:relative;
+	min-height:180px;
+}
+
+.footer__logo-link{
+	position:absolute;
+	top:40px;
+	left:0;
+}
+.footer_nav-wrap{
+	@include clearfix;
+	max-width:500px;
+	margin:0 auto;
+}
+.footer__nav{
+	@extend .format-ul;
+	display:block;
+	float:left;
+	margin-left:65px;
+
+	&:first-child{
+		margin-left:0;
+	}	
+}
+.footer__nav-item{
+	display:block;
+	margin-bottom:5px;
+}
+.footer__nav-title{
+	font-weight: bold;
+	color:#fff;
+	font-size:15px;
+
+}
+.footer__nav-link{
+	font-size:15px;
+	color:#fff;
+
+	&:hover{
+		text-decoration: none;
+	}
+
+	&:active{
+		color: #d4b9f4;
+	}
+
+}
+.footer__icons-list{
+	display:block;
+	@extend .format-ul;
+	position:absolute;
+	right:0;
+	top:0;
+	max-width:200px;
+	margin-top:10px;
+}
+.footer__icons-item{
+	display:inline-block;
+}
+.footer__icons-link{
+	background-repeat: no-repeat;
+	display: block;
+	margin-bottom: 28px; 
+}
+.app{
+	background-image: url(../images/app-store.png);
+}
+.play{
+	background-image: url(../images/google-play.png);
+}
+.vk{
+	background-image: url(../images/vk.png);
+}
+.fb{
+	background-image: url(../images/fb.png);
+}
+.tw{
+	background-image: url(../images/tw.png);
+}
+.long{
+	width: 90px;
+	height: 32px;
+}
+.short{
+	width: 36px;
+	height: 36px;
+	margin-right: 16px;
+	@include box-shadow(2px, 2px, 5px, 0, #3b2854);
+}
+.footer__icons-name{
+  position: absolute;
+  display: block;
+  top: -9999px;
+}

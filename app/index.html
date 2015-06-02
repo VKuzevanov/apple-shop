@@ -19,6 +19,7 @@
 
         <!-- vendor css -->
         <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+        <link rel="stylesheet" href="fonts/stylesheet.css">
 
         
         <!-- main csss -->
@@ -26,16 +27,598 @@
 
         <!-- js -->
         <script src="bower/modernizr/modernizr.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">Вы используете <strong>старый браузер</strong>. Пожалуйста <a href="http://browsehappy.com/">обновитье Ваш браузер</a> для нормального отображения сайта!</p>
     <![endif]-->
+        <!-- header start -->
+        <div class="header-wrap">
+            <header class="header">
+                <a href="#" class="logo-link">
+                    <img class="logo" src="images/logo.png" height="57" width="199" alt="ЭпплShop">
+                    <span class="logo-decription">Магазин ЭпплShop</span>
+                </a>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__item-tel" href="tel:+79213221232">
+                            <span class="contacts__item-tel-code">+7(921)</span> 322 12 32
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__item-mail" href="mailto:manager@company.com">
+                            manager@company.com
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        <div class="wrapper">
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Мобильные телефоны</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link active" href="#">Планшеты</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Mp3 плееры</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Персональные компьютеры</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Ноутбуки</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link tv" href="#">Apple TV</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="func-line">
+                <ul class="func-line__breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a href="#" class="breadcrumbs-link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="#" class="breadcrumbs-link">
+                            Каталог
+                        </a>
+                    </li>
+                </ul>
 
-        тест
+                <div class="func-line__veiws-pagin">
+                    <form id="veiws" class="views-form" action="">
+                        <select class="view__pagination-toggle-select">
+                            <option value="row">Линиями</option>
+                            <option  value="grid">Сеткой</option>
+                        </select>
+                    </form>
+                    <ul class="pagin-menu">
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link  pagin-link-active">1
+                            </a>
+                        </li>
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link">2
+                            </a>
+                        </li>
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link">3
+                            </a>
+                        </li>
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link">4
+                            </a>
+                        </li>
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link">5
+                            </a>
+                        </li>
+                        <li class="pagin-items">
+                            <a href="#" class="pagin-link">Все
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <ul class="sidebar__menu">
+                      <li class="sidebar__menu-item">
+                        <a href="" class="sidebar__menu-link sidebar__menu-link-active">
+                           iPhone 
+                        </a>
+                        <ul class="sidebar__sub-menu">
+                            <li class="sidebar__sub-menu-item">
+                                <a href="#" class="sidebar__sub-menu-link">
+                                    iPhone 4s
+                                </a>
+                            </li>
+                            <li class="sidebar__sub-menu-item">
+                                <a href="#" class="sidebar__sub-menu-link ">
+                                    iPhone 5
+                                </a>
+                            </li>
+                            <li class="sidebar__sub-menu-item">
+                                <a href="#" class="sidebar__sub-menu-link">
+                                    iPhone 5s с эксклюзивным дизайном
+                                </a>
+                            </li>
+                            <li class="sidebar__sub-menu-item">
+                                <a href="#" class="sidebar__sub-menu-link">
+                                    iPhone 6
+                                </a>
+                            </li>
+                            <li class="sidebar__sub-menu-item">
+                                <a href="#" class="sidebar__sub-menu-link">
+                                    iPhone 6 plus
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                      <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__menu-link">
+                           iPad 
+                        </a>
+                    </li>
+                      <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__menu-link">
+                            iMak
+                        </a>
+                    </li>
+                      <li class="sidebar__menu-item">
+                        <a href=#"" class="sidebar__menu-link">
+                           Makbook 
+                        </a>
+                    </li>
+                      <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__menu-link">
+                            iPod
+                        </a>
+                    </li>
+                      <li class="sidebar__menu-item">
+                        <a href="#" class="sidebar__menu-link">
+                            Другое
+                        </a>
+                    </li>
+                  </ul>  
+            </aside>
+            <main class="main-content">
+                <section class="products">
+                    <ul class="products-list">
+                        <li class="products-item">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap">
+                                    <img src="images/01.jpg" alt="Apple Thunderbolt Display 27" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">Apple Thunderbolt Display 27"</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                         <li class="products-item ">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap ">
+                                    <img src="images/02.jpg" alt="Apple iMac 27" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">Apple iMac 27"</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                         <li class="products-item ">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap ">
+                                    <img src="images/03.jpg" alt="iPhone 5s Gold" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">iPhone 5s Gold</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                         <li class="products-item ">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap ">
+                                    <img src="images/04.jpg" alt="AiPad Air Wi-Fi + Cellular 128GB - Silver" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">iPad Air Wi-Fi + Cellular 128GB - Silver</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                         <li class="products-item ">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap ">
+                                    <img src="images/05.jpg" alt="Apple iPod nano 7G 16 ГБ Blue" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">Apple iPod nano 7G 16 ГБ Blue</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                         <li class="products-item ">
+                            <a href="#" class="products-item__link">
+                                <div class="products__img-wrap ">
+                                    <img src="images/06.jpg" alt="Роутер Wi-Fi Apple AirPort Extreme Base Station" class="products__img">
+                                </div>
+                                <div class="products__info">
+                                    <span class="products-name">Роутер Wi-Fi Apple AirPort Extreme Base Station</span>
+                                    <ul class="products__info-list">
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Артикул:
+                                            </span>
+                                            <span class="products__info-value">
+                                                42787425
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Опция:
+                                            </span>
+                                            <span class="products__info-value">
+                                                включена
+                                            </span>
+                                        </li>
+                                         <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Цвет:
+                                            </span>
+                                            <span class="products__info-value">
+                                                серебристый
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Размер:
+                                            </span>
+                                            <span class="products__info-value">
+                                                1280*1245*90
+                                            </span>
+                                        </li>
+                                        <li class="products-info-item">
+                                            <span class="products__info-property ">
+                                                Вес:
+                                            </span>
+                                            <span class="products__info-value">
+                                                9 кг
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </section>
+                <article class="about">
+                    <h2 class="about-title">Пара слов о магазине</h2>
+                    <section class="about-entry">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+                        &nbsp
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                    </section>
+                </article>
+            </main>
+        </div>
+        <div class="footer-wrap">
+            <footer class="footer">
+                <a href="#" class="footer__logo-link">
+                    <img src="images/logo-footer.png" height="39" width="139" alt="аппл-shop магазин" class="footer__logo">
+                    <span class="logo-decription">Магазин ЭпплShop</span>
+                </a>
+                <div class="footer_nav-wrap">
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><span class="footer__nav-title">О магазине</span></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Наши цены</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Наши скидки</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Акции</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><span class="footer__nav-title">Каталог</span></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Смартфоны</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Планшеты</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Компьютеры</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Аксессуары</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><span class="footer__nav-title">Контакты</span></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Телефоны</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Адреса</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Карта проезда</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <ul class="footer__icons-list">
+                    <li class="footer__icons-item"><a href="#" class="footer__icons-link app long"><span class="footer__icons-name">
+                        App Store
+                    </span></a></li>
+                    <li class="footer__icons-item"><a href="#" class="footer__icons-link play long"><span class="footer__icons-name">
+                        Goole Store
+                    </span></a></li>
+                    <li class="footer__icons-item"><a href="#" class="footer__icons-link vk short"><span class="footer__icons-name">
+                        Вконтакте
+                    </span></a></li>
+                    <li class="footer__icons-item"><a href="#" class="footer__icons-link fb short"><span class="footer__icons-name">
+                        Facebook
+                    </span></a></li>
+                    <li class="footer__icons-item"><a href="#" class="footer__icons-link tw short"><span class="footer__icons-name">
+                        Twitter
+                    </span></a></li>
+                </ul>
+            </footer>
+        </div>
+        <a href="#" class="up-btn">Наверх</a>
         <!-- js -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/jquery.formstyler.min.js"></script>
     </body>
 </html>
